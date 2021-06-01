@@ -1,0 +1,8 @@
+{
+  "name": "space-survival-angular-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "4dc56c6f"
+}

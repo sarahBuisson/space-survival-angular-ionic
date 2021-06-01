@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "space-survival-angular-ionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
