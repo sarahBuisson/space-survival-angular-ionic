@@ -1,0 +1,118 @@
+{
+  "party": {
+    "player": {
+      "name": "John Doe",
+      "status": {
+        "faim": 0,
+        "soif": 0,
+        "sommeil": 0,
+        "blessure": 0,
+        "folie": 0
+      }
+    },
+    "univers": [
+      {
+        "x": 0,
+        "y": 0,
+        "name": "Terre",
+        "type": "planete",
+        "sousLocations": []
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "name": "Station abandonnée",
+        "type": "spaceStation",
+        "sousLocations": [],
+        "content": []
+      }
+    ]
+  },
+  "bestiaire": {
+    "locations": [
+      {
+        "name": "temple",
+        "type": "building",
+        "imageUrl": "http://something",
+        "content": []
+      },
+      {
+        "name": "giant planete",
+        "type": "planete",
+        "imageUrl": "http://something",
+        "content": []
+      }
+    ],
+    "items": [
+      {
+        "name": "gourde",
+        "type": "collectable",
+        "actions": [
+          {
+            "name": "boire",
+
+            "effect": {
+              "status": {
+                "soif": -10
+              }
+            }
+          }
+        ],
+        "value": "10"
+      },
+      {
+        "name": "ration",
+        "type": "collectable",
+        "actions": [
+          {
+            "name": "manger",
+            "effect": {
+              "status": {
+                "faim": -20
+              }
+            }
+          }
+        ],
+        "value": "10"
+      },
+      {
+        "name": "trousse pharmacie",
+        "type": "collectable",
+        "actions": [
+          {
+            "name": "utiliser",
+            "effect": {
+              "status": {
+                "blessure": -50
+              }
+            }
+          }
+        ],
+        "value": "10"
+      },
+      {
+        "name": "lit",
+        "type": "fixe",
+        "actions": [
+          {
+            "name": "dormir",
+            "effect": {
+              "status": {
+                "sommeil": -100
+              }
+            }
+          },
+          {
+            "name": "mediter",
+            "effect": {
+              "status": {
+                "folie": -100
+              }
+            }
+          }
+        ],
+        "value": "100"
+      }
+    ]
+  }
+}
